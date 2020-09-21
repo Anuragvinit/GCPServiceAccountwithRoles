@@ -1,0 +1,23 @@
+imports:
+- path: project_custom_role.jinja
+
+resources:
+- name: customrole
+  type: project_custom_role.jinja
+  properties:
+    roleId: serviceAccountRoles
+    title: serviceAccountRoles
+    stage: BETA
+    description: Roles of service account to trigger recommendation
+    includedPermissions:
+    - resourcemanager.projects.get
+    - compute.zones.list
+    - compute.addresses.list
+    - compute.disks.list
+    - recommender.computeInstanceMachineTypeRecommendations.list
+    - recommender.computeInstanceIdleResourceRecommendations.list
+    - recommender.computeDiskIdleResourceRecommendations.list
+    - bigquery.tables.create
+    - bigquery.tables.get
+    - bigquery.datasets.get
+    - bigquery.tables.updateData
