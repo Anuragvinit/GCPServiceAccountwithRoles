@@ -2,7 +2,7 @@ imports:
 - path: project_custom_role.jinja
 
 resources:
-- name: customrole
+- name: cloudOptycustomRole
   type: project_custom_role.jinja
   properties:
     roleId: serviceAccountRoles
