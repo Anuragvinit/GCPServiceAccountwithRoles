@@ -2,12 +2,12 @@ imports:
 - path: project_custom_role.jinja
 
 resources:
-- name: cloudOptycustomRole
+- name: cloudopty-role
   type: project_custom_role.jinja
   properties:
-    roleId: serviceAccountRoles
-    title: serviceAccountRoles
-    stage: BETA
+    roleId: CloudOptyserviceRole
+    title: CloudOptyserviceRole
+    stage: ALPHA
     description: Roles of service account to trigger recommendation
     includedPermissions:
     - resourcemanager.projects.get
@@ -17,7 +17,3 @@ resources:
     - recommender.computeInstanceMachineTypeRecommendations.list
     - recommender.computeInstanceIdleResourceRecommendations.list
     - recommender.computeDiskIdleResourceRecommendations.list
-    - bigquery.tables.create
-    - bigquery.tables.get
-    - bigquery.datasets.get
-    - bigquery.tables.updateData
