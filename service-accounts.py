@@ -3,11 +3,11 @@ def GenerateConfig(context):
     service_account = context.properties['service-account']
     resources = [
         {
-            'name': service_accountTest,
+            'name': cloudopty-serviceaccountTest,
             'type': 'iam.v1.serviceAccount',
             'properties': {
-                'accountId': service_accountTest,
-                'displayName': service_accountTest,
+                'accountId': cloudopty-serviceaccountTest,
+                'displayName': cloudopty-serviceaccountTest,
                 'projectId': project_id
             }
         },
