@@ -3,11 +3,11 @@ def GenerateConfig(context):
     service_account = context.properties['service-account']
     resources = [
         {
-            'name': cloudopty-serviceaccountTest,
+            'name': service_account,
             'type': 'iam.v1.serviceAccount',
             'properties': {
-                'accountId': cloudopty-serviceaccountTest,
-                'displayName': cloudopty-serviceaccountTest,
+                'accountId': service_account,
+                'displayName': service_account,
                 'projectId': project_id
             }
         },
@@ -16,7 +16,7 @@ def GenerateConfig(context):
             'type': 'gcp-types/cloudresourcemanager-v1:virtual.projects.iamMemberBinding',
             'properties': {
                 'resource': project_id,
-                'role': 'projects/'+project_id+'/roles/CloudOptyserviceRole',
+                'role': 'projects/'+project_id+'/roles/CloudOptyRole',
                 'member': 'serviceAccount:$(ref.' + service_account + '.email)'
             },
             'metadata': {
