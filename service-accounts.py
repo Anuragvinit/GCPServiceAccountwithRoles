@@ -3,11 +3,11 @@ def GenerateConfig(context):
     service_account = context.properties['service-account']
     resources = [
         {
-            'name': service_account,
+            'name': service_accountTest,
             'type': 'iam.v1.serviceAccount',
             'properties': {
-                'accountId': service_account,
-                'displayName': service_account,
+                'accountId': service_accountTest,
+                'displayName': service_accountTest,
                 'projectId': project_id
             }
         },
