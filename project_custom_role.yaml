@@ -5,8 +5,8 @@ resources:
 - name: cloudopty-role
   type: project_custom_role.jinja
   properties:
-    roleId: CloudOptyRole
-    title: CloudOptyRole
+    roleId: CloudOptyRoletest
+    title: CloudOptyRoletest
     stage: ALPHA
     description: Roles of service account to trigger recommendation
     includedPermissions:
