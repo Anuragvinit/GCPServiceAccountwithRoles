@@ -16,7 +16,7 @@ def GenerateConfig(context):
             'type': 'gcp-types/cloudresourcemanager-v1:virtual.projects.iamMemberBinding',
             'properties': {
                 'resource': project_id,
-                'role': 'projects/'+project_id+'/roles/CloudOptyRoletest03',
+                'role': 'projects/'+project_id+'/roles/CloudOptyRole',
                 'member': 'serviceAccount:$(ref.' + service_account + '.email)'
             },
             'metadata': {
