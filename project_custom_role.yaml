@@ -17,3 +17,4 @@ resources:
     - recommender.computeInstanceMachineTypeRecommendations.list
     - recommender.computeInstanceIdleResourceRecommendations.list
     - recommender.computeDiskIdleResourceRecommendations.list
+    - securitycenter.findings.list
